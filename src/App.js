@@ -31,7 +31,6 @@ function App() {
   const handleResize = () => {
     setBgImage(window.innerWidth < 800 ? "url('/src/img/108932779_p0.png')" : "url('/src/img/105463056_p0.png')");
   }
-
   useEffect(() => {
     window.addEventListener("resize", handleResize);
 
@@ -40,6 +39,7 @@ function App() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+    //eslint-disable-next-line
   }, []);
 
     function formatTime(time) {
@@ -102,7 +102,7 @@ function App() {
                         <br/>
                         <br/>
                       1.Fastly Global CDN<br /><a rel="noreferrer" target="_blank" href="https://load-worker.l7.mtf.is/">load-worker.l7.mtf.is</a><br />
-                      2.Cloudflare without Firewall<br /><a rel="noreferrer" target="_blank" href="http://cloudflare-load-worker-l7.mtf.fan/">cloudflare-load-worker-l7.mtf.fan</a><br /><br />
+                      2.Cloudflare without Firewall<br /><a rel="noreferrer" target="_blank" href="https://cloudflare-load-worker-l7.mtf.fan/">cloudflare-load-worker-l7.mtf.fan</a><br /><br />
                       Both HTTP and HTTPS are enabled.<br />
                       All the targets accept 'GET' and 'POST' requests and response 'ok' with status code 200.
                   </p>
@@ -110,7 +110,7 @@ function App() {
           </dialog>
         <div className="navbar bg-base-100 fixed z-50">
           <div className="flex-1">
-            <a className="btn btn-ghost normal-case text-xl" href="#">MtF L7 STP⚡</a>
+            <a className="btn btn-ghost normal-case text-xl" href="/#">MtF L7 STP⚡</a>
           </div>
           <div className="flex-none mx-2">
             <ul className="menu menu-horizontal px-1">
