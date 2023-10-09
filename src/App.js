@@ -115,6 +115,7 @@ function App() {
           <div className="flex-none mx-2">
             <ul className="menu menu-horizontal px-1">
               <li><a rel="noreferrer" target="_blank" href="https://github.com/LianZiZhou/L7StressPlatform">GitHub</a></li>
+                <li><a rel="noreferrer" target="_blank" href="https://t.me/mtfld">Telegram</a></li>
             </ul>
           </div>
         </div>
